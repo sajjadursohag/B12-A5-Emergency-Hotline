@@ -52,10 +52,10 @@
   </section>
   <main class="bg-[#F5FFF6]">
     <section id="services-container" class="w-11/12 mx-auto py-10 grid grid-cols-12">
-        <section id="service-box" class="col-span-9">
-            <div class="grid grid-cols-3 bg-slate-100">
+        <section id="service-box" class=" col-span-9">
+            <div class=" grid grid-cols-3 bg-slate-100">
                 <div class="emergency">
-                <div class="flex justify-between">
+                <div class="flex justify-between ">
                 <img src="./assets/emergency.png" alt="" class="w-8 h-8 ">
                 <img src="./assets/heart.png" alt="" class="w-8 h-8 ">
                 </div>
@@ -64,8 +64,8 @@
                 <p class="font-extrabold text-black mt-10">999</p>
                 <span class="bg-gray-200 font-bold mt-5 text-gray-600">All</span>
                 <div class="flex justify-between mt-4">
-                    <button class="bg-white px-11 py-2 rounded-md text-sm p-3"><i class="fa-regular fa-copy"></i> Copy</button>
-                <button class="bg-[#00A63E] text-white px-11 py-2 rounded-md text-sm p-3"><i class="fa-solid fa-phone"></i> Call</button>
+                    <button onclick="copyNumber('999')" class="bg-white px-11 py-2 rounded-md text-sm p-3"><i class="fa-regular fa-copy"></i> Copy</button>
+                <button onclick="callNumber('National Emergency Number', '999')" class="bg-[#00A63E] text-white px-11 py-2 rounded-md text-sm p-3"><i class="fa-solid fa-phone"></i> Call</button>
                 </div>
             </div>
                 <div class="police">
@@ -78,8 +78,8 @@
                 <p class="font-extrabold text-black mt-10">999</p>
                 <span class="bg-gray-200 font-bold mt-5 text-gray-600">Police</span>
                 <div class="flex justify-between mt-4">
-                    <button class="bg-white px-11 py-2 rounded-md text-sm p-3"><i class="fa-regular fa-copy"></i> Copy</button>
-                <button class="bg-[#00A63E] text-white px-11 py-2 rounded-md text-sm p-3"><i class="fa-solid fa-phone"></i> Call</button>
+                    <button onclick="copyNumber('999')" class="bg-white px-11 py-2 rounded-md text-sm p-3"><i class="fa-regular fa-copy"></i> Copy</button>
+                <button onclick="callNumber('Police Helpline Number', '999')" class="bg-[#00A63E] text-white px-11 py-2 rounded-md text-sm p-3"><i class="fa-solid fa-phone"></i> Call</button>
                 </div>
             </div>
                 <div class="fire-service">
@@ -92,8 +92,8 @@
                 <p class="font-extrabold text-black mt-10">999</p>
                 <span class="bg-gray-200 font-bold mt-5 text-gray-600">Fire</span>
                 <div class="flex justify-between mt-4">
-                    <button class="bg-white px-11 py-2 rounded-md text-sm p-3"><i class="fa-regular fa-copy"></i> Copy</button>
-                <button class="bg-[#00A63E] text-white px-11 py-2 rounded-md text-sm p-3"><i class="fa-solid fa-phone"></i> Call</button>
+                    <button onclick="callNumber('999')" class="bg-white px-11 py-2 rounded-md text-sm p-3"><i class="fa-regular fa-copy"></i> Copy</button>
+                <button onclick="callNumber('Fire Service Number','999')" class="bg-[#00A63E] text-white px-11 py-2 rounded-md text-sm p-3"><i class="fa-solid fa-phone"></i> Call</button>
                 </div>
             </div>
                 <div class="ambulance-service">
@@ -106,8 +106,8 @@
                 <p class="font-extrabold text-black mt-10">1994-999999</p>
                 <span class="bg-gray-200 font-bold mt-5 text-gray-600">Health</span>
                 <div class="flex justify-between mt-4">
-                    <button class="bg-white px-11 py-2 rounded-md text-sm p-3"><i class="fa-regular fa-copy"></i> Copy</button>
-                <button class="bg-[#00A63E] text-white px-11 py-2 rounded-md text-sm p-3"><i class="fa-solid fa-phone"></i> Call</button>
+                    <button onclick="copyNumber('1994-999999')" class="bg-white px-11 py-2 rounded-md text-sm p-3"><i class="fa-regular fa-copy"></i> Copy</button>
+                <button onclick="callNumber('Ambulance Service', '1994-999999')" class="bg-[#00A63E] text-white px-11 py-2 rounded-md text-sm p-3"><i class="fa-solid fa-phone"></i> Call</button>
                 </div>
             </div>
                 <div class="brac-help">
@@ -120,8 +120,8 @@
                 <p class="font-extrabold text-black mt-10">16445</p>
                 <span class="bg-gray-200 font-bold mt-5 text-gray-600">NGO</span>
                 <div class="flex justify-between mt-4">
-                    <button class="bg-white px-11 py-2 rounded-md text-sm p-3"><i class="fa-regular fa-copy"></i> Copy</button>
-                <button class="bg-[#00A63E] text-white px-11 py-2 rounded-md text-sm p-3"><i class="fa-solid fa-phone"></i> Call</button>
+                    <button onclick="copyNumber('16445')" class="bg-white px-11 py-2 rounded-md text-sm p-3"><i class="fa-regular fa-copy"></i> Copy</button>
+                <button onclick="callNumber('Brac Helpline', '16445')" class="bg-[#00A63E] text-white px-11 py-2 rounded-md text-sm p-3"><i class="fa-solid fa-phone"></i> Call</button>
                 </div>
             </div>
                 <div class="bd-railway">
@@ -134,18 +134,23 @@
                 <p class="font-extrabold text-black mt-10">163</p>
                 <span class="bg-gray-200 font-bold mt-5 text-gray-600">Travel</span>
                 <div class="flex justify-between mt-4">
-                    <button class="bg-white px-11 py-2 rounded-md text-sm p-3"><i class="fa-regular fa-copy"></i> Copy</button>
-                <button class="bg-[#00A63E] text-white px-11 py-2 rounded-md text-sm p-3"><i class="fa-solid fa-phone"></i> Call</button>
+                    <button onclick="copyNumber('163')" class="bg-white px-11 py-2 rounded-md text-sm p-3"><i class="fa-regular fa-copy"></i> Copy</button>
+                <button onclick="callNumber('Bangladesh Railway Helpline', '163')" class="bg-[#00A63E] text-white px-11 py-2 rounded-md text-sm p-3"><i class="fa-solid fa-phone"></i> Call</button>
                 </div>
             </div>
             
             </div>
         </section>
-        <aside id="history-box" class="bg-green-500 col-span-3">
-        
+        <aside class="bg-white rounded-2xl col-span-3">
+        <h3 class="font-bold flex justify-between items-center ">Call History
+            <button onclick="clearHistory()" class="bg-green-700 text-white text-sm px-5 py-2 rounded-lg">Clear</button>
+        </h3>
+        <ul id="callHistory" class="space-y-2 text-sm text-gray-700">
+
+        </ul>
         </aside>
     </section>
   </main>
-    
+    <script src="./script/script.js"></script>
 </body>
 </html>
