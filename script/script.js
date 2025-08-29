@@ -1,3 +1,15 @@
+    const wishlistCount = document.getElementById("wishlist-count");
+     let count = 0;
+     const hearts = document.querySelectorAll(".heart-btn");
+
+     hearts.forEach(btn => {
+       btn.addEventListener("click", () => {
+         count++;
+        wishlistCount.textContent = count;
+       });
+     });  
+      
+     
      function copyNumber(number) {
       navigator.clipboard.writeText(number).then(() => {
         alert("Number copied: " + number);
@@ -14,7 +26,7 @@
       let time = now.toLocaleTimeString();
       let date = now.toLocaleDateString();
 
-       li.textContent = `${service} - ${number} | 📅 ${date} 🕒 ${time}`;
+       li.textContent = `${service} - ${number} |🕒 ${time}`;
       historyList.appendChild(li);
 
       alert("Calling " + service + " (" + number + ")");
